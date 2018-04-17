@@ -10,3 +10,5 @@ I wanted to make a simple 12-column CSS3 grid system just for fun.
  - md: smaller than 1200px
  - lg: equal or larger than 1200px
 
+
+![Screenshot](screenshot-a.png "A screenshot.")
