@@ -13,92 +13,126 @@
   </head>
 
   <body>
-
-    Example with equal column widths:
-    <div class="row">
-      <div class="col-12">col-12</div>
-    </div>
-     
-    <div class="row">
-      <div class="col-6">col-6</div>
-      <div class="col-6">col-6</div>
-    </div>
-    
-    <div class="row">
-      <div class="col-4">col-4</div>
-      <div class="col-4">col-4</div>
-      <div class="col-4">col-4</div>
-    </div>
-
-    <div class="row">
-      <div class="col-3">col-3</div>
-      <div class="col-3">col-3</div>
-      <div class="col-3">col-3</div>
-      <div class="col-3">col-3</div>
-    </div>
-
-    <div class="row">
-      <div class="col-2">col-2</div>
-      <div class="col-2">col-2</div>
-      <div class="col-2">col-2</div>
-      <div class="col-2">col-2</div>
-      <div class="col-2">col-2</div>
-      <div class="col-2">col-2</div>
-    </div>
-
-    <div class="row">
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-      <div class="col-1">col-1</div>
-    </div>
-
-
-    Example with mixed column widths:
-     
-    <div class="row">
-      <div class="col-4">col-4</div>
-      <div class="col-8">col-8</div>
-    </div>
-    
-    <div class="row">
-      <div class="col-2">col-2</div>
-      <div class="col-8">col-8</div>
-      <div class="col-2">col-2</div>
-    </div>
-
-    <div class="row">
-      <div class="col-1">col-1</div>
-      <div class="col-2">col-2</div>
-      <div class="col-4">col-4</div>
-      <div class="col-5">col-5</div>
-    </div>
-    
-    
-    Example with different row heights:
-    <div class="row" style="height: 50px;">
-      <div class="col-12" style="height: 100%;">col-12</div>
-    </div>
-     
-    <div class="row" style="height: 100px;">
-      <div class="col-6" style="height: 50%;">col-6</div>
-      <div class="col-6" style="height: 100%;">col-6</div>
-    </div>
-    
-    <div class="row" style="height: 150px;">
-      <div class="col-4" style="height: 33%;">col-4</div>
-      <div class="col-4" style="height: 66%;">col-4</div>
-      <div class="col-4" style="height: 100%;">col-4</div>
-    </div>
+    <div>window.innerWidth=<span id="window-innerwidth"></span>px</div>
     
 
+    <div class="container">
+      <h3>Example with equal column widths</h3>
+      <div class="row">
+	<div class="col-12">col-12</div>
+      </div>
+      
+      <div class="row">
+	<div class="col-6">col-6</div>
+	<div class="col-6">col-6</div>
+      </div>
+      
+      <div class="row">
+	<div class="col-4">col-4</div>
+	<div class="col-4">col-4</div>
+	<div class="col-4">col-4</div>
+      </div>
+
+      <div class="row">
+	<div class="col-3">col-3</div>
+	<div class="col-3">col-3</div>
+	<div class="col-3">col-3</div>
+	<div class="col-3">col-3</div>
+      </div>
+
+      <div class="row">
+	<div class="col-2">col-2</div>
+	<div class="col-2">col-2</div>
+	<div class="col-2">col-2</div>
+	<div class="col-2">col-2</div>
+	<div class="col-2">col-2</div>
+	<div class="col-2">col-2</div>
+      </div>
+
+      <div class="row">
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+	<div class="col-1">col-1</div>
+      </div>
+    </div>
+
+    
+    <div class="container">
+      <h3>Example with mixed column widths</h3>
+      <div class="row">
+	<div class="col-4">col-4</div>
+	<div class="col-8">col-8</div>
+      </div>
+      
+      <div class="row">
+	<div class="col-2">col-2</div>
+	<div class="col-8">col-8</div>
+	<div class="col-2">col-2</div>
+      </div>
+
+      <div class="row">
+	<div class="col-1">col-1</div>
+	<div class="col-2">col-2</div>
+	<div class="col-4">col-4</div>
+	<div class="col-5">col-5</div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <h3>Example with nested rows/columns</h3>
+      <div class="row">
+	<div class="col-6">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-6">col-6/col-6</div>
+	      <div class="col-6">col-6/col-6</div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+	
+    
+    
+    <div class="container">
+      <h3>Example with different row heights</h3>
+      <div class="row" style="height: 50px;">
+	<div class="col-12" style="height: 100%;">col-12</div>
+      </div>
+      
+      <div class="row" style="height: 100px;">
+	<div class="col-6" style="height: 50%;">col-6</div>
+	<div class="col-6" style="height: 100%;">col-6</div>
+      </div>
+      
+      <div class="row" style="height: 150px;">
+	<div class="col-4" style="height: 33%;">col-4</div>
+	<div class="col-4" style="height: 66%;">col-4</div>
+	<div class="col-4" style="height: 100%;">col-4</div>
+      </div>
+    </div>
+
+
+    <script>
+      (function() {
+      function resized() {
+         console.log('innerWidth=' + window.innerWidth );
+        document.getElementById('window-innerwidth').innerHTML = window.innerWidth;
+      } 
+      window.addEventListener('resize',resized);
+      resized();
+      })();
+    </script>
   </body>
 </html>

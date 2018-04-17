@@ -1,78 +1,281 @@
 /**
+ * CSS3 classes for a simple 12-column grid system.
+ *
  * @author  Ikaros Kappler
  * @date    2018-04-17
  * @version 1.0.0
  **/
 
-body, html {
+
+div.container {
     margin : 0;
     padding : 0;
     box-sizing : border-box;
 }
 
 div.row {
-    /* display : block; */
     width : 100%;
     margin : 0;
     padding : 0;
-    /* box-sizing : border-box; */
 }
 
-div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6, div.col-7, div.col-8, div.col-9, div.col-10, div.col-11, div.col-12 {
-    /* position : relative; */
-    /* display : inline-block; */
-    
+div.col-1, div.col-2, div.col-3,
+div.col-4, div.col-5, div.col-6,
+div.col-7, div.col-8, div.col-9,
+div.col-10, div.col-11, div.col-12 {    
     min-height : 1px;
     margin : 0;
-    padding : 10px;
+    padding : 0px 10px;
     float : left;
     box-sizing : border-box;
 }
 
+/* +-------------------------------------------------------------------
+ * | Break point lg >= 1200 (default)
+ * +------------------------------------------------------------------- */
 div.col-1 {
-    width : 8.33333333%;
+    width : 8.3333333%;
 }
-
 div.col-2 {
     width : 16.6666667%;
 }
-
 div.col-3 {
     width : 25.0000000%;
 }
-
 div.col-4 {
     width : 33.3333333%;
 }
-
 div.col-5 {
     width : 41.6666667%;
 }
-
 div.col-6 {
     width : 50.0000000%;
 }
-
 div.col-7 {
     width : 58.3333337%;
 }
-
 div.col-8 {
     width : 66.6666667%;
 }
-
 div.col-9 {
     width : 75.0000000%;
 }
-
 div.col-10 {
     width : 83.3333333%;
 }
-
 div.col-11 {
     width : 91.6666667%;
 }
-
 div.col-12 {
-    width : 100.0000000%
+    width : 100.0000000%;
+}
+
+
+/* +-------------------------------------------------------------------
+ * | Break point < 480
+ * +------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+    /* div.col-1 {
+	width : 8.3333333%;
+    }
+    div.col-2 {
+	width : 16.6666667%;
+    }
+    div.col-3 {
+	width : 25.0000000%;
+    }
+    div.col-4 {
+	width : 33.3333333%;
+    }
+    div.col-5 {
+	width : 41.6666667%;
+    }
+    div.col-6 {
+	width : 50.0000000%;
+    }
+    div.col-7 {
+	width : 58.3333337%;
+    }
+    div.col-8 {
+	width : 66.6666667%;
+    }
+    div.col-9 {
+	width : 75.0000000%;
+    }
+    div.col-10 {
+	width : 83.3333333%;
+    }
+    div.col-11 {
+	width : 91.6666667%;
+    }*/
+    div.col-1, div.col-2, div.col-3,
+    div.col-4, div.col-5, div.col-6,
+    div.col-7, div.col-8, div.col-9,
+    div.col-10, div.col-11, div.col-12 {
+	width : 100.0000000%;
+    }
+}
+
+
+/* +-------------------------------------------------------------------
+ * | Break point 480 < 768
+ * +------------------------------------------------------------------- */
+@media only screen and (min-width : 480px) and (max-width: 767px) {
+    /*div.col-1 {
+	width : 8.3333333%;
+    }
+    div.col-2 {
+	width : 16.6666667%;
+    }
+    div.col-3 {
+	width : 25.0000000%;
+    }
+    div.col-4 {
+	width : 33.3333333%;
+    }
+    div.col-5 {
+	width : 41.6666667%;
+    }*/
+    div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6 {
+	width : 50.0000000%;
+    }
+    /*div.col-7 {
+	width : 58.3333337%;
+    }
+    div.col-8 {
+	width : 66.6666667%;
+    }
+    div.col-9 {
+	width : 75.0000000%;
+    }
+    div.col-10 {
+	width : 83.3333333%;
+    }
+    div.col-11 {
+	width : 91.6666667%;
+    }*/
+    div.col-7, div.col-8, div.col-9, div.col-10, div.col-11, div.col-12 {
+	width : 100.0000000%;
+    }
+}
+
+/* +-------------------------------------------------------------------
+ * | Break point 768 < 992
+ * +------------------------------------------------------------------- */
+@media only screen and (min-width : 768px) and (max-width: 991px) {
+    /*div.col-1 {
+	width : 8.3333333%;
+    }
+    div.col-2 {
+	width : 16.6666667%;
+    }
+    div.col-3 {
+	width : 25.0000000%;
+    }*/
+    /*div.col-1, div.col-2, div.col-3, div.col-4 {
+	width : 33.3333333%;
+    }*/
+    /*div.col-5 {
+	width : 50%;41.6666667%;
+    }
+    div.col-6 {
+	width : 50.0000000%;
+    }
+    div.col-7 {
+	width : 58.3333337%;
+    }*/
+    /*div.col-5, div.col-6, div.col-7, div.col-8 {
+	width : 66.6666667%;
+    }*/
+    /*div.col-9 {
+	width : 75.0000000%;
+    }
+    div.col-10 {
+	width : 83.3333333%;
+    }
+    div.col-11 {
+	width : 91.6666667%;
+    }*/
+    /*div.col-9, div.col-10, div.col-11, div.col-12 {
+	width : 100.0000000%;
+    }*/
+    
+    /*div.col-1 {
+	width : 8.3333333%;
+    }
+    div.col-2 {
+	width : 16.6666667%;
+    }*/
+    div.col-1, div.col-2, div.col-3 {
+	width : 25.0000000%;
+    }
+    /*div.col-4 {
+	width : 33.3333333%;
+    }
+    div.col-5 {
+	width : 41.6666667%;
+    }*/
+    div.col-4, div.col-5, div.col-6 {
+	width : 50.0000000%;
+    }
+    /*div.col-7 {
+	width : 58.3333337%;
+    }
+    div.col-8 {
+	width : 66.6666667%;
+    }*/
+    div.col-7, div.col-8, div.col-9 {
+	width : 75.0000000%;
+    }
+    /*div.col-10 {
+	width : 83.3333333%;
+    }
+    div.col-11 {
+	width : 91.6666667%;
+    }*/
+    div.col-10, div.col-11, div.col-12 {
+	width : 100.0000000%;
+    }
+}
+
+/* +-------------------------------------------------------------------
+ * | Break point 992 < 1200
+ * +------------------------------------------------------------------- */
+@media only screen and (min-width : 991px) and (max-width: 1199px) {
+    /* div.col-1 {
+	width : 8.3333333%;
+    }*/
+    div.col-1, div.col-2 {
+	width : 16.6666667%;
+    }
+    /*div.col-3 {
+	width : 25.0000000%;
+    }*/
+    div.col-3, div.col-4 {
+	width : 33.3333333%;
+    }
+    /*div.col-5 {
+	width : 50%;41.6666667%;
+    }*/
+    div.col-5, div.col-6 {
+	width : 50.0000000%;
+    }
+    /*div.col-7 {
+	width : 58.3333337%;
+    }*/
+    div.col-7, div.col-8 {
+	width : 66.6666667%;
+    }
+    /*div.col-9 {
+	width : 75.0000000%;
+    }*/
+    div.col-9, div.col-10 {
+	width : 83.3333333%;
+    }
+    /*div.col-11 {
+	width : 91.6666667%;
+    }*/
+    div.col-11, div.col-12 {
+	width : 100.0000000%;
+    }
 }
